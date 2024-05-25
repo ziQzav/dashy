@@ -21,8 +21,8 @@ services:
       # - /path/to/item-icons:/app/user-data/item-icons/
 
     # Set port that web service will be served on. Keep container port as 8080
-    ports:
-      - 4000:8080
+    expose:
+      - 8080
 
     # Set any environmental variables
     environment:
